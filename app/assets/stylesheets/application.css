@@ -2,10 +2,19 @@
 @import url('https://fonts.googleapis.com/css?family=Suez+One');
 @import '*';
 
+body{
+
+}
+
 .nav-wrapper{
   margin-left: 10%;
   margin-right: 10%;
 } 
+
+.logo{
+  padding-top: 0.5em;
+  width: 3em;
+}
 
 #navbar{
   background-color: #fff;
@@ -20,9 +29,7 @@ h1{
 }
 
 #first-div{
-  position: absolute; 
   width: 100%; 
-  height:55vh;
 }
 
 #second-div{
@@ -32,16 +39,20 @@ h1{
   background-color: #fff;
 }
 #third-div{
-  position: absolute; 
-  top:165vh;
-  background-color: #757575;
-  height:65vh;
   width: 100%; 
 }
+#fourth-div{
+  width: 100%; 
+  height: 20vh; 
+  background-color: #fff;
+}
+
 #marketing-sentence{
-  text-align: center;
+  margin-left: 20%;
   font-family: 'Suez One', serif;
   font-size: 1.5em;
+  color: #4e342e;
+
 }
 #contact-info{
   color: #fff;

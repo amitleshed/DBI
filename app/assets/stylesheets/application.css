@@ -29,7 +29,6 @@ h1{
 }
 
 #first-div{
-  width: 100%; 
 }
 
 #second-div{
@@ -39,7 +38,6 @@ h1{
   background-color: #fff;
 }
 #third-div{
-  width: 100%; 
 }
 #fourth-div{
   width: 100%; 
@@ -48,7 +46,7 @@ h1{
 }
 
 #marketing-sentence{
-  margin-left: 20%;
+  margin-left: 23%;
   font-family: 'Suez One', serif;
   font-size: 1.5em;
   color: #4e342e;

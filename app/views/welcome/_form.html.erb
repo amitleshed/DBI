@@ -1,0 +1,15 @@
+<%= form_for @contact, url: { action: 'create', controller: 'contacts' }, remote: true do |f| %>
+<div>
+  <%= f.text_field :name, placeholder: "שם מלא", :style => "text-align:right;margin-top:15px;", :class => "inputs"%>
+</div> 
+
+<div>
+  <%= f.text_field :email, placeholder: "כתובת דוא״ל", :style => "text-align:right;", :class => "inputs"  %>
+</div>
+
+<div>
+  <%= f.text_field :cellnum, placeholder: "טלפון", :style => "text-align:right;", :class => "inputs"  %>
+</div>
+
+  <%= f.submit "!לפנסיה Boost תן", :class => "waves-effect waves-light btn-large", :style => "width:100%;background-color: #E91E63;margin-top: -19px;" %>
+<% end %>

@@ -21,3 +21,6 @@
 
 en:
   hello: "Hello world"
+  welcome:
+    index:
+      ttl_marketing: 'Marketing blah blah'

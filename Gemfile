@@ -22,6 +22,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+  gem 'd3js-rails', '~> 3.1', '>= 3.1.6'
+  gem 'd3_rails'
+  gem 'c3-rails'
+  gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
+  gem "animate-rails"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

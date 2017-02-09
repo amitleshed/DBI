@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DBI</title>
+  <title>Boost</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+
   <%= csrf_meta_tags %>
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <nav id="navbar" style="box-shadow: 0px 0px 0px 0px">
-    <div class="nav-wrapper">
-      <a href="#" id="title"><img class="logo" src="https://cdn.pixabay.com/photo/2016/11/21/19/31/icon-1847268_1280.png"></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-      </ul>
-    </div>
-  </nav>
+  <div class="navbar-fixed section scrollspy" id="navbar-scroll" style="margin-top: -15px;">
+    <nav id="navbar" style="box-shadow: 1px 1px 0px 1px #eeeeee">
+      <div class="nav-wrapper" >
+        <a href="#navbar-scroll" id="title">Boost</a>
+        <span style="font-size: 10px; color: #000;">YOUR PENSION</span>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a style="color: #000" href="#fifth-div">?עובד Boost איך</a></li>
+          <li><a style="color: #000" href="#fourth-div">תשואות</a></li>
+          <li><a style="color: #000" href="#second-div">דמי ניהול</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
   <!-- NAVBAR/ -->
 
 <%= yield %>

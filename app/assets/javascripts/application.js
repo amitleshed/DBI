@@ -13,4 +13,27 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require c3
+//= require d3
 //= require_tree .
+
+      //PARALLAX
+      $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+      //PARALLAX /
+
+      //SCROLLSPY
+  $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+    //SCROLLSPY /
+
+    //MODAL CONTACT
+    $(document).ready(function(){
+    $('#modal-contact').modal();
+  });
+    //MODAL CONTACT /
+
+
+

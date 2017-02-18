@@ -1,97 +1,97 @@
-  <div id="modal-contact" class="modal" > <!-- MODAL STRUCTURE HAS TO BE OUT OF THE BODY TAGS! -->
-    <div class="modal-content" >
+  <div id="modal-contact" class="modal" style="" > <!-- MODAL STRUCTURE HAS TO BE OUT OF THE BODY TAGS! -->
+    <div class="modal-content">
+        <h1 style="text-align: center; font-weight: 100;">דברו איתנו</h1>
         <%= render 'form' %>
     </div>
   </div> <!-- MODAL STRUCTURE HAS TO BE OUT OF THE BODY TAGS! -->
 
+
+
 <body>
-  <div class="parallax-container" style="height: 35em; z-index: 500" >
-    <div id="first-div" class="parallax">
+    <div id="first-div" class="">
 <!--         <img style="width:200%;" src="http://previews.123rf.com/images/_fla/_fla1301/_fla130100155/17590380-Cartoon-hand-drawing-houses-Stock-Vector-house-town-city.jpg"> -->
-      <div style="padding-top: 4em;">
-        <h1 class="animated fadeInDown" style="color: #757575;font-size: 60px;text-align: center;"><%= t('.ttl_marketing', locale: :he) %></h1>
-        <h1 class="animated fadeInDown" style="text-align: center; font-size: 25px;color: #757575;"><%= t('.ttl_marketingp', locale: :he) %><h1>
-        <h1 class="animated fadeInDown" style="text-align: center; font-size: 25px;color: #757575;letter-spacing: 2px;margin-top: -20px;"><%= t('.ttl_marketingp2', locale: :he) %><h1>
-      </div>
-      <div style="margin-left: 38%; margin-top: 60px;">
-      <a class="waves-light btn-large" style="width: 40%; background-color: #E91E63;" href="#modal-contact"><%= t('.btn_start', locale: :he)%></a>
-      </div>
+      <div style="float: right; margin-top: 3em;" dir="rtl">
+<div id="container" style="width: 30%;">
+</div>
+
+
+      <script>
+        new Vivus('logo', {type: 'delayed', duration: 200}); 
+      </script>
+      <h1 class="animated fadeInDown" style="color: #fff;font-size: 60px;font-weight: 100;margin-right: 1em; font-weight: 100;">נהל את הפנסיה שלך, פרוש עשיר יותר.</h1>
+      <ul style="text-align: right; margin-right: 10%; margin-top: 5em;">
+      <li id="welcome-list-h1">
+        <span class="animated fadeInDown" style="font-size: 25px;font-weight: 200;"><%= t('.ttl_marketingp', locale: :he) %><span>
+      </li>
+      <li id="welcome-list-h1">
+        <span class="animated fadeInDown" style=" font-size: 25px;font-weight: 200;">רוב החוסכים שוכחים לבדוק איזו תשואה השיגה עבורם קרן הפנסיה<span>
+      </li>
+      <li id="welcome-list-h1">
+        <span style="font-size: 25px;font-weight: 200;"><%= t('.ttl_marketingp2', locale: :he) %><span>
+      </li>
+        <a class="button buttonc" style="margin-top: 2em;" href="#modal-contact"><%= t('.btn_start', locale: :he)%></a>
+     </ul>
     </div>
-  </div>
+</div>
 
-  <div id="second-div" class="section scrollspy">
-    <div style="display: inline; margin-left: 10%; margin-right: 10%;">
-        <!-- BOOST BTN -->
-       <%= link_to 'לחץ', '', :remote => "true", :class => "btn-floating btn-large waves-light boost-btn tooltipped", 
-                                                  :"data-tooltip" => "Boost לחץ לדמי ניהול עם", :"data-position" => "top",
-                                                  :onclick => '
-                                                        chart.unload({
-                                                            ids: noBoost
-                                                          });
-
-                                                        chart.unload({
-                                                            ids: Fees
-                                                          });
-
-                                                        setTimeout(function (){
-                                                          chart.load({
-                                                            columns: [
-                                                              ["Boost", 888],
-                                                              [Fees, 15]
-                                                            ]
-                                                           });
-                                                          }, 400);
-                                                          ' 
-        %>
-        <!-- BOOST BTN / -->
-
-        <!-- PIE CHART -->
-      <div id="chart1"> 
-          <script type="text/javascript">
-
-            var Boost = "Boost חסכון עם";
-            var noBoost = "החסכון שלך היום";
-            var Fees = "דמי ניהול";
-            var chart = c3.generate({
-              bindto: '#chart1',
-              data: {
-                  // iris data from R
-                  columns: [
-                      [noBoost, 734],
-                      [Fees, 154],
-                  ],
-                    colors: {
-                      'החסכון שלך היום': '#9e9e9e',
-                      'דמי ניהול': '#FFC107',
-                      'Boost': '#E91E63'
-                  },
-                  type : 'pie',
-                  onclick: function (d, i) { console.log("onclick", d, i); },
-                  onmouseover: function (d, i) { console.log("onmouseover", d, i); },
-                  onmouseout: function (d, i) { console.log("onmouseout", d, i); }
-              },
-                pie: {
-                label: {
-                    format: function (value, ratio, id) {
-                        return d3.format('$')(value);
-                    }
-                }
+  <div id="second-div" class="row" style="height: 45em;">
+  <div class="col s6 section scrollspy" id="chart1div" style="margin-top: 5em;">
+  <div id="chart1" style="margin-top: 10em;">
+    <script type="text/javascript">
+      var chart = c3.generate({
+        bindto: "#chart1",
+        data: {
+            columns: [
+                ['data1', 9765],
+                ['data2', 8345]
+            ],
+            type: 'bar'
+        },
+        bar: {
+            width: {
+                ratio: 0.6 // this makes bar width 50% of length between ticks
             }
-          });
-
-          </script>
-      </div>
+            // or
+            //width: 100 // this makes bar width 100px
+        }
+    });
+    </script>
     </div>
-    <!-- PIE CHART / -->
   </div>
+    <div class="col s6" style="border-left: 1px solid #eeeeee;margin-top: 5em;">
+     <div>
+        <h1 style="margin-right:5%; text-align: right; font-weight: 100;">הזן את נתוניך</h1>
+        <h1 style="margin-right:5%; text-align: right; font-size: 30px; letter-spacing: 1px; color: #888888; margin-top: -15px; font-weight: 100;">וגלה כמה דמי ניהול אתה משלם</h1>
+        <br><br>
+        <input id="salary_param" name="salary_param" data-salary type="text" placeholder="?מהי המשכורת שלך" style="width: 25%; float: right; text-align: right;margin-right: 5%;"/>
+        <input id="age_param" name="age_param" data-age type="text" placeholder="גיל כניסה לקרן" style="width: 25%; float: right; text-align: right;margin-right: 5%;"/>
+        <div style="width: 25%; margin-left: 10%">
+          <select data-sex>
+            <option value="" disabled selected class="right-align">מין</option>
+            <option value=67>גבר</option>
+            <option value=64>אישה</option>
+          </select>
+        </div>
+        <br/>
+        <br/>
+        <h1 style="margin-right:5%;float:right; font-weight: 100;">דמי ניהול: &#8362;<span id="fees-result">0</span></h1>
+        <!-- <h1 style="margin-right:5%;float:right;">סך הפנסיה: &#8362;<span id="pension-result">0</span></h1> -->
+        <!-- 
+        <h1 style="margin-right:5%;float:right">משכורת: &#8362;<span id="fees-result-salary">0</span></h1> -->
+        <!-- <input id="name" name="name" type="text" /> -->
+        <br>
+    </div>
+  </div>
+    </div>
+      </div>
 
-<div><!-- SPACE -->
-  <div class="parallax-container">
-    <div id="third-div" class="parallax">
+  <div class="row">
+    <div id="third-div" class="col s12">
 <!--         <img style="z-index: -1;width:100%;" src="https://wallpaperscraft.com/image/scooter_moped_vespa_retro_mint_102397_3840x2160.jpg"> -->
           <div>
-          <p style="text-align: center;font-size: 50px;color: #757575; font-weight: 300;"><%= t('.ttl_marketing1', locale: :he) %></p>
-          <p style="text-align: center;font-size: 40px;color: #757575;margin-top: -30px;letter-spacing: 3px; font-weight: 300;"><%= t('.ttl_marketing2', locale: :he) %></p>
+          <h1 style="text-align: center;font-size: 60px;color: #fff;font-weight: 100;">להיות במסלול המנצח תמיד</h1>
+          <h1 style="text-align: center;font-size: 25px;color: #fff;letter-spacing: 1px;font-weight: 100;"><%= t('.ttl_marketing2', locale: :he) %></h1>
+          <h1 style="text-align: center;font-size: 25px;color: #fff;letter-spacing: 0px;font-weight: 100;"><%= t('.ttl_marketing3', locale: :he) %></h1>
       </div>
 </div>
       <div style="margin-left: 10%; margin-right: 10%;">
@@ -100,7 +100,8 @@
   </div>
 
   <div id="fourth-div" class="section scrollspy">
-    <div style="margin-left: 10%; margin-right: 10%;margin-top: -9em;">
+    <div style="margin-left: 10%; margin-right: 10%;">
+    <h1 style="text-align: center; font-weight: 100;font-size: 40px;">תשואת המסלולים בשנה האחרונה</h1>
       <div id="chart2">
         <script type="text/javascript">
 
@@ -120,7 +121,7 @@
                 x: "x",
                 columns: [
                     ['x', 'מסלול תלוי גיל', 'מסלול מניות', 'מסלול אג״ח', 'מסלול הלכה', 'מסלול כללי'],
-                    [migdal, 30, 200, 100, 400, 150],
+                    [migdal, 20, 200, 100, 400, 150],
                     [helman, 130, 100, 140, 200, 150],
                     [altshuler, 130, 100, 140, 200, 150],
                     [psagot, 130, 100, 140, 200, 150],
@@ -154,15 +155,48 @@
         });
         </script>
       </div>
+    <div style="margin-top: 6em; "></div> <!-- SPACE -->
+    <ul style="border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee" class="center-align">
+    <div style="">
+      <li style="display:inline-block;" class="firm-icon">
+        <%= image_tag("https://upload.wikimedia.org/wikipedia/he/thumb/e/ea/Clal_Bituach_logo.svg/1280px-Clal_Bituach_logo.svg.png", :style => "width:100px;")%>
+      </li>
+      <li style="display:inline-block;" class="firm-icon">
+        <%= image_tag("https://upload.wikimedia.org/wikipedia/he/thumb/0/0a/Harel_Group_Logo.svg/200px-Harel_Group_Logo.svg.png", :style => "width:100px;")%>
+      </li>
+      <li style="display:inline-block;" class="firm-icon">
+        <%= image_tag("http://sosa.co/wp-content/uploads/2016/09/Sosa-AH.png", :style => "width:100px;")%>
+      </li>
+      <li style="display:inline-block;" class="firm-icon">
+        <%= image_tag("https://upload.wikimedia.org/wikipedia/he/thumb/1/18/The_Phoenix_Holdings_Logo.svg/1280px-The_Phoenix_Holdings_Logo.svg.png", :style => "width:100px;")%>
+      </li>
+      <li style="display:inline-block;" class="firm-icon">
+        <%= image_tag("http://www.alonins.co.il/shared/logos/comp/ayalon.png", :style => "width:100px;")%>
+      </li>
+      <li style="display:inline-block;" class="firm-icon">
+        <%= image_tag("http://customerservice-il.com/wp-content/uploads/2013/12/menora.png", :style => "width:100px;")%>
+      </li>
+      <li style="display:inline-block;" class="firm-icon">
+        <%= image_tag("https://gemelonline.psagot.co.il/Images/ErrorLogo.png", :style => "width:100px;")%>
+      </li>
+      <li style="display:inline-block;" class="firm-icon">
+        <%= image_tag("http://media.hag.co.il/rio2016/res/images/halman-aldubi-logo.png", :style => "width:100px;")%>
+      </li>
+      <li style="display:inline-block;" class="firm-icon">
+        <%= image_tag("http://b-o.co.il/wp-content/uploads/2009/01/Tmigdal.png", :style => "width:50px;")%>
+      </li>
+      </div>
+    </ul>
     </div>
   </div>
 
-    <div class="" style="height: 29em;">
+    <div class="" style="height: 34em;">
     <div id="fifth-div" class="section scrollspy">
       <div style="padding-top: 0em;">
-          <p style="text-align: center;font-size: 40px;color: #757575;">?עובד <span style="color:#E91E63; font-size: 40px">Boost</span> איך</p>
+          <p style="text-align: center;font-size: 60px;color: #757575;font-weight: 900;">?עובד <span style="color:#E91E63; font-size: 60px;font-weight: 100;">Boost</span> איך</p>
       </div>
-      <div style="display:block;margin:auto;width:41%; padding-top: 4em; padding-bottom: 10em;"><%= image_tag("howboostworks.png", :size => "550x150")%></div>
+      <div style="display:block; padding-top: 2em; padding-bottom: 10em;" class="center-align"><%= image_tag("howboostworks2.png", :size => "", :class => "undraggableimg howboostworks")%>
+      </div>
     </div>
   </div>
 
@@ -186,11 +220,9 @@
           </div>
           <div class="footer-copyright" style="background-color: #E91E63">
             <div class="container">
-            © 2017 Copyright Boost.
+            © 2017 Copyright D.B.I.
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
           </div>
         </footer>
-            
-
 </body>

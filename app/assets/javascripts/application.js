@@ -15,6 +15,8 @@
 //= require turbolinks
 //= require c3
 //= require d3
+//= require underscore
+//= require vivus.min
 //= require_tree .
 
       //PARALLAX
@@ -31,9 +33,18 @@
 
     //MODAL CONTACT
     $(document).ready(function(){
-    $('#modal-contact').modal();
+    $('#modal-contact').modal({
+      opacity: 0.5,
+    });
   });
     //MODAL CONTACT /
+
+    // SELECT RADIO BTN
+    $(document).ready(function() {
+    $('select').material_select();
+  });
+    // SELECT RADIO BTN /
+        
 
 
 

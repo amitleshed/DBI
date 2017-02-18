@@ -28,6 +28,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
   gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
   gem "animate-rails"
 
+  gem 'underscore-rails'
+  gem 'vivus'
+  gem 'rails_vivus'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

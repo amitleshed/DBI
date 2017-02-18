@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Boost</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boost Your Pension</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
@@ -10,8 +11,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="animate.min.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 
 
@@ -21,20 +22,46 @@
 
   <!-- NAVBAR -->
   <div class="navbar-fixed section scrollspy" id="navbar-scroll" style="margin-top: -15px;">
-    <nav id="navbar" style="box-shadow: 1px 1px 0px 1px #eeeeee">
-      <div class="nav-wrapper" >
-        <a href="#navbar-scroll" id="title">Boost</a>
-        <span style="font-size: 10px; color: #000;">YOUR PENSION</span>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a style="color: #000" href="#fifth-div">?עובד Boost איך</a></li>
-          <li><a style="color: #000" href="#fourth-div">תשואות</a></li>
-          <li><a style="color: #000" href="#second-div">דמי ניהול</a></li>
+    <nav id="navbar" style="box-shadow: 1px 1px 0px 1px #eeeeee;">
+      <div class="nav-wrapper" style="margin-left: 5%; margin-right: 5%;">
+        <a class="buttonsml buttonc navbtnstrt valign-wrapper" style="float: right;" href="#modal-contact"><span class="valign center-align" style="margin-left: -0.3em;">הצטרף</span></a>
+          <h1 class="logo brand-logo center" id="title">Boost</h1>
+        <ul id="nav-mobile" class="left hide-on-med-and-down" style="font-family: 'Assistant', serif; font-weight: 100;">
+          <li><a style="color: #000; font-size: 20px" href="#fifth-div">?עובד Boost איך</a></li>
+          <li><a style="color: #000; font-size: 20px" href="#fourth-div">תשואות</a></li>
+          <li><a style="color: #000; font-size: 20px" href="#chart1div">דמי ניהול</a></li>
         </ul>
       </div>
     </nav>
   </div>
   <!-- NAVBAR/ -->
 
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+   $('.navbtnstrt').hide();
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 470) {
+        $('.navbtnstrt').removeClass("animated fadeOutUpBig");
+        $('.navbtnstrt').show();
+        $('.navbtnstrt').addClass("animated fadeInDownBig"); 
+      } 
+     else
+     {
+      $('.navbtnstrt').removeClass("animated fadeInDownBig");
+      $('.navbtnstrt').addClass("animated fadeOutUpBig");
+    }
+});
+
+</script>
 <%= yield %>
 
 </body>

@@ -5,21 +5,11 @@
 @import url('https://fonts.googleapis.com/css?family=Suez+One');
 @import url('https://fonts.googleapis.com/css?family=Assistant');
 @import '*';
+@import url('https://fonts.googleapis.com/css?family=Assistant:200');
 
 body{
 
 }
-
-.nav-wrapper{
-  margin-left: 10%;
-  margin-right: 10%;
-} 
-
-.logo{
-  padding-top: 0.5em;
-  width: 3em;
-}
-
 #navbar{
   background-color: #fff;
 }
@@ -30,31 +20,36 @@ h1{
 
 #title{
   color: #E91E63;
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: 100;
+  display: inline; 
+  margin-top: 0.2em;
 }
 
 #first-div{
+  background-image: url("WP5.png");
+  background-size: 100%;
   background-color: #eeeeee;
+  height: 45em;
 }
 
 #second-div{
   width: 100%; 
-  height: 60vh; 
   background-color: #fff;
 }
 
 #third-div{
   height: 20em;
-  background-color: #EEEEEE;
+  background-color: #b5b4ae;
 }
 
 #fourth-div{
   width: 100%; 
-  height: 35vh; 
+  height: 45em; 
   background-color: #fff;
 }
 #fifth-div{
-  background-color: #eeeeee;
+  background-color: #F5F5F5;
 }
 
 #marketing-sentence{
@@ -70,8 +65,8 @@ h1{
 }
 
 .howboostworks{
-  width: 100px !important;
-  height: 50px !important;
+  width: 50%;
+  height: 25%;
 }
 .boost-btn{
   background-color: #FFC107 !important;
@@ -82,9 +77,111 @@ h1{
    border-bottom: 1px solid grey !important;
    box-shadow: 0 1px 0 0 grey !important;
  }
+ .inputs::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #888888;
+}
+.inputs::-moz-placeholder { /* Firefox 19+ */
+  color: #888888;
+}
+.inputs:-ms-input-placeholder { /* IE 10+ */
+  color: #888888;
+}
+.inputs:-moz-placeholder { /* Firefox 18- */
+  color: #888888;
+}
 
+ .firm-icon {
+    margin-left: 1em;
+    opacity: 0.3;
+    transition: 0.3;
+ }
+  .firm-icon:hover {
+    margin-left: 1em;
+    opacity: 1;
+    transition: 0.3;
+ }
+ .undraggableimg{
+  user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+ }
+ .welcome-arrow{
+  position: absolute;
+  left: 12.5em;
+  top: 13em;
+  font-size: 50px;
+ }
+ .button {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Assistant', serif;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+ .buttonsml {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Assistant', serif;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 5em;
+    height: 2.8em;
+}
+.buttonc {
+    background-color: #E91E63;
+    color: #fff;
+}
 
-
+.buttonc:hover {
+  background-color: #e7e7e7;
+  color: #000;
+}
+#welcome-list-h1{
+  font-family: 'Assistant', serif;
+  color: #fff !important;
+}
+#welcome-list-h1::before {
+  content: "•";
+  color: #18FFFF;
+  display: inline-block !important;
+  margin-left: 0.2em;
+  font-size: 30px;
+}
+::selection {
+  background: #E91E63; /* WebKit/Blink Browsers */
+  color: #fff;
+}
+::-moz-selection {
+  background: #E91E63; /* Gecko Browsers */
+  color: #fff;
+}
+#modal-contact{
+  background-color: #dddddd;
+  width: 30%;
+}
 
 
 
@@ -258,3 +355,28 @@ h1{
 .c3-chart-arc .c3-gauge-value {
   fill: #000;
   /*  font-size: 28px !important;*/ }
+
+  /* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+  @media only screen and (max-width: 1000px) {
+    #first-div{
+      background-size: 300% !important;
+      height: 50em;
+    }
+    #modal-contact{
+      width: 100%;
+    }
+    .navbtnstrt{
+      margin-top: 0.4em;
+      height: 2em;
+    }
+    #title{
+      margin-top:0.1em;
+    }
+}
+
+
+
+
+
+

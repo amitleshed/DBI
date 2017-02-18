@@ -25,7 +25,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
   gem 'c3-rails'
   gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
   gem "animate-rails"
-
   gem 'underscore-rails'
   gem 'vivus'
   gem 'rails_vivus'

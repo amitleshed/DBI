@@ -84,6 +84,7 @@ GEM
     multi_json (1.12.1)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
+    pg (0.19.0)
     rack (1.6.5)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -174,6 +175,7 @@ DEPENDENCIES
   font-awesome-rails (~> 4.7, >= 4.7.0.1)
   jbuilder (~> 2.0)
   jquery-rails
+  pg
   rails (= 4.2.5.1)
   rails_12factor
   rails_vivus

@@ -53,12 +53,12 @@
   </div>
     <div class="col s6" style="border-left: 1px solid #eeeeee;margin-top: 5em;">
      <div>
-        <h1 style="margin-right:5%; text-align: right; font-weight: 100;">הזן את נתוניך</h1>
-        <h1 style="margin-right:5%; text-align: right; font-size: 30px; letter-spacing: 1px; color: #888888; margin-top: -15px; font-weight: 100;">וגלה כמה דמי ניהול אתה משלם</h1>
+        <h1 class="first-mrkt-s-div2" style="margin-right:5%; text-align: right; font-weight: 100;">הזן את נתוניך</h1>
+        <h1 class="second-mrkt-s-div2" style="margin-right:5%; text-align: right; font-size: 30px; letter-spacing: 1px; color: #888888; margin-top: -15px; font-weight: 100;">וגלה כמה דמי ניהול אתה משלם</h1>
         <br><br>
-        <input id="salary_param" name="salary_param" data-salary type="text" placeholder="?מהי המשכורת שלך" style="width: 25%; float: right; text-align: right;margin-right: 5%;"/>
-        <input id="age_param" name="age_param" data-age type="text" placeholder="גיל כניסה לקרן" style="width: 25%; float: right; text-align: right;margin-right: 5%;"/>
-        <div style="width: 25%; margin-left: 10%">
+        <input id="salary_param" class="cal-inputs" name="salary_param" data-salary type="text" placeholder="?מהי המשכורת שלך" style="width: 25%; float: right; text-align: right;margin-right: 5%;"/>
+        <input id="age_param" class="cal-inputs" name="age_param" data-age type="text" placeholder="גיל כניסה לקרן" style="width: 25%; float: right; text-align: right;margin-right: 5%;"/>
+        <div style="width: 25%; margin-left: 10%" class="cal-inputs">
           <select data-sex>
             <option value="" disabled selected class="right-align">מין</option>
             <option value=67>גבר</option>
@@ -67,7 +67,7 @@
         </div>
         <br/>
         <br/>
-        <h1 style="margin-right:5%;float:right; font-weight: 100;">דמי ניהול: &#8362;<span id="fees-result">0</span></h1>
+        <h1 class="third-mrkt-s-div2" style="margin-right:5%;float:right; font-weight: 100;">דמי ניהול: &#8362;<span id="fees-result">0</span></h1>
         <!-- <h1 style="margin-right:5%;float:right;">סך הפנסיה: &#8362;<span id="pension-result">0</span></h1> -->
         <!-- 
         <h1 style="margin-right:5%;float:right">משכורת: &#8362;<span id="fees-result-salary">0</span></h1> -->
@@ -82,9 +82,8 @@
     <div id="third-div" class="col s12">
 <!--         <img style="z-index: -1;width:100%;" src="https://wallpaperscraft.com/image/scooter_moped_vespa_retro_mint_102397_3840x2160.jpg"> -->
           <div>
-          <h1 style="text-align: center;font-size: 60px;color: #fff;font-weight: 100;">להיות במסלול המנצח תמיד</h1>
-          <h1 style="text-align: center;font-size: 25px;color: #fff;letter-spacing: 1px;font-weight: 100;"><%= t('.ttl_marketing2', locale: :he) %></h1>
-          <h1 style="text-align: center;font-size: 25px;color: #fff;letter-spacing: 0px;font-weight: 100;"><%= t('.ttl_marketing3', locale: :he) %></h1>
+          <h1 class="first-mrkt-s-div3" style="text-align: center;font-size: 60px;color: #fff;font-weight: 100;">להיות במסלול המנצח תמיד</h1>
+          <h1 class="third-mrkt-s-div3" style="text-align: center;font-size: 25px;color: #fff;letter-spacing: 0px;font-weight: 100;"><%= t('.ttl_marketing3', locale: :he) %></h1>
       </div>
 </div>
       <div style="margin-left: 10%; margin-right: 10%;">
@@ -152,46 +151,44 @@
     <ul style="border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee" class="center-align">
     <div style="">
       <li style="display:inline-block;" class="firm-icon">
-        <%= image_tag("https://upload.wikimedia.org/wikipedia/he/thumb/e/ea/Clal_Bituach_logo.svg/1280px-Clal_Bituach_logo.svg.png", :style => "width:100px;")%>
+        <%= image_tag("https://upload.wikimedia.org/wikipedia/he/thumb/e/ea/Clal_Bituach_logo.svg/1280px-Clal_Bituach_logo.svg.png", :style => "width:100px;", :class => "firm-icon-width")%>
       </li>
       <li style="display:inline-block;" class="firm-icon">
-        <%= image_tag("https://upload.wikimedia.org/wikipedia/he/thumb/0/0a/Harel_Group_Logo.svg/200px-Harel_Group_Logo.svg.png", :style => "width:100px;")%>
+        <%= image_tag("https://upload.wikimedia.org/wikipedia/he/thumb/0/0a/Harel_Group_Logo.svg/200px-Harel_Group_Logo.svg.png", :style => "width:100px;", :class => "firm-icon-width")%>
       </li>
       <li style="display:inline-block;" class="firm-icon">
-        <%= image_tag("http://sosa.co/wp-content/uploads/2016/09/Sosa-AH.png", :style => "width:100px;")%>
+        <%= image_tag("http://sosa.co/wp-content/uploads/2016/09/Sosa-AH.png", :style => "width:100px;", :class => "firm-icon-width")%>
       </li>
       <li style="display:inline-block;" class="firm-icon">
-        <%= image_tag("https://upload.wikimedia.org/wikipedia/he/thumb/1/18/The_Phoenix_Holdings_Logo.svg/1280px-The_Phoenix_Holdings_Logo.svg.png", :style => "width:100px;")%>
+        <%= image_tag("https://upload.wikimedia.org/wikipedia/he/thumb/1/18/The_Phoenix_Holdings_Logo.svg/1280px-The_Phoenix_Holdings_Logo.svg.png", :style => "width:100px;", :class => "firm-icon-width")%>
       </li>
       <li style="display:inline-block;" class="firm-icon">
-        <%= image_tag("http://www.alonins.co.il/shared/logos/comp/ayalon.png", :style => "width:100px;")%>
+        <%= image_tag("http://www.alonins.co.il/shared/logos/comp/ayalon.png", :style => "width:100px;", :class => "firm-icon-width")%>
       </li>
       <li style="display:inline-block;" class="firm-icon">
-        <%= image_tag("http://customerservice-il.com/wp-content/uploads/2013/12/menora.png", :style => "width:100px;")%>
+        <%= image_tag("http://customerservice-il.com/wp-content/uploads/2013/12/menora.png", :style => "width:100px;", :class => "firm-icon-width")%>
       </li>
       <li style="display:inline-block;" class="firm-icon">
-        <%= image_tag("https://gemelonline.psagot.co.il/Images/ErrorLogo.png", :style => "width:100px;")%>
+        <%= image_tag("https://gemelonline.psagot.co.il/Images/ErrorLogo.png", :style => "width:100px;", :class => "firm-icon-width")%>
       </li>
       <li style="display:inline-block;" class="firm-icon">
-        <%= image_tag("http://media.hag.co.il/rio2016/res/images/halman-aldubi-logo.png", :style => "width:100px;")%>
+        <%= image_tag("http://media.hag.co.il/rio2016/res/images/halman-aldubi-logo.png", :style => "width:100px;", :class => "firm-icon-width")%>
       </li>
       <li style="display:inline-block;" class="firm-icon">
-        <%= image_tag("http://b-o.co.il/wp-content/uploads/2009/01/Tmigdal.png", :style => "width:50px;")%>
+        <%= image_tag("http://b-o.co.il/wp-content/uploads/2009/01/Tmigdal.png", :style => "width:50px;", :class => "migdal-icon-width")%>
       </li>
       </div>
     </ul>
     </div>
   </div>
 
-    <div class="" style="height: 34em;">
-    <div id="fifth-div" class="section scrollspy">
+    <div id="fifth-div" class="section scrollspy" style="height: 34em;">
       <div style="padding-top: 0em;">
-          <p style="text-align: center;font-size: 60px;color: #757575;font-weight: 900;">?עובד <span style="color:#E91E63; font-size: 60px;font-weight: 100;">Boost</span> איך</p>
+          <p class="howboostworkstext" style="text-align: center;font-size: 60px;color: #757575;font-weight: 900;">?עובד <span class="howboostworkstext" style="color:#E91E63; font-size: 60px;font-weight: 100;">Boost</span> איך</p>
       </div>
       <div style="display:block; padding-top: 2em; padding-bottom: 10em;" class="center-align"><%= image_tag("howboostworks2.png", :size => "", :class => "undraggableimg howboostworks")%>
       </div>
     </div>
-  </div>
 
           <footer class="page-footer" style="background-color: #eeeeee; border-top: 1px solid #fff;">
           <div class="container">

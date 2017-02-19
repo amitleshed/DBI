@@ -407,11 +407,11 @@ user-select: none;
 
     /*THIRD DIV*/
     .first-mrkt-s-div3{
-      margin-top: 0.8em !important;
+      margin-top: 0.5em !important;
       font-size: 47px !important;
     }
     .third-mrkt-s-div3{
-      font-size: 24px !important;
+      font-size: 29px !important;
       word-break: keep-all;
       text-shadow: 1px 1px #888888;
     }

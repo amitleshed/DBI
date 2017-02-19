@@ -11,25 +11,18 @@
     <div id="first-div" class="">
 <!--         <img style="width:200%;" src="http://previews.123rf.com/images/_fla/_fla1301/_fla130100155/17590380-Cartoon-hand-drawing-houses-Stock-Vector-house-town-city.jpg"> -->
       <div style="float: right; margin-top: 3em;" dir="rtl">
-<div id="container" style="width: 30%;">
-</div>
-
-
-      <script>
-        new Vivus('logo', {type: 'delayed', duration: 200}); 
-      </script>
-      <h1 class="animated fadeInDown" style="color: #fff;font-size: 60px;font-weight: 100;margin-right: 1em; font-weight: 100;">נהל את הפנסיה שלך, פרוש עשיר יותר.</h1>
-      <ul style="text-align: right; margin-right: 10%; margin-top: 5em;">
+      <h1 class="animated fadeInDown first-mrkt-s-m" style="color: #fff;font-size: 60px;font-weight: 100;margin-right: 1em; font-weight: 100;">נהל את הפנסיה שלך, פרוש עשיר יותר.</h1>
+      <ul class="first-mrkt-ul" style="text-align: right; margin-right: 10%; margin-top: 5em;">
       <li id="welcome-list-h1">
-        <span class="animated fadeInDown" style="font-size: 25px;font-weight: 200;"><%= t('.ttl_marketingp', locale: :he) %><span>
+        <span class="animated fadeInDown first-div-bullet" style="font-size: 25px;font-weight: 200;"><%= t('.ttl_marketingp', locale: :he) %><span>
       </li>
       <li id="welcome-list-h1">
-        <span class="animated fadeInDown" style=" font-size: 25px;font-weight: 200;">רוב החוסכים שוכחים לבדוק איזו תשואה השיגה עבורם קרן הפנסיה<span>
+        <span class="animated fadeInDown first-div-bullet" style=" font-size: 25px;font-weight: 200;">רוב החוסכים שוכחים לבדוק איזו תשואה השיגה עבורם קרן הפנסיה<span>
       </li>
       <li id="welcome-list-h1">
-        <span style="font-size: 25px;font-weight: 200;"><%= t('.ttl_marketingp2', locale: :he) %><span>
+        <span class="first-div-bullet" style="font-size: 25px;font-weight: 200;"><%= t('.ttl_marketingp2', locale: :he) %><span>
       </li>
-        <a class="button buttonc" style="margin-top: 2em;" href="#modal-contact"><%= t('.btn_start', locale: :he)%></a>
+        <a class="button buttonc join-btn" style="margin-top: 2em;" href="#modal-contact"><%= t('.btn_start', locale: :he)%></a>
      </ul>
     </div>
 </div>
@@ -42,8 +35,8 @@
         bindto: "#chart1",
         data: {
             columns: [
-                ['data1', 9765],
-                ['data2', 8345]
+                ['דמי ניהול מופחתים', 888000],
+                ['דמי ניהול מקסימליים', 734000]
             ],
             type: 'bar'
         },

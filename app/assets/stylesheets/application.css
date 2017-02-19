@@ -354,10 +354,32 @@ user-select: none;
   /* -------------------------------------------------------------------------------------------------------------------------------------- */
 
   @media only screen and (max-width: 1000px) {
+
     #first-div{
+      background-image: url("http://i.imgur.com/Bljwfxa.png");
       background-size: 300% !important;
       height: 50em;
     }
+    .first-mrkt-s-m{
+      margin-right: 0 !important;
+      text-align: center;
+      font-size: 47px !important;
+    }
+
+    .first-mrkt-ul{
+      margin-left: 3em !important;
+      margin-right: 3em !important;
+      margin-top: 2em !important;
+      text-shadow: 1px 1px #888888;
+      padding: 0;
+    }
+    .first-div-bullet{
+      font-size: 20px !important;
+    }
+    .join-btn{
+      width: 100% !important; 
+    }
+
     #modal-contact{
       width: 100%;
     }

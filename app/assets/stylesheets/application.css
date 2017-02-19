@@ -435,6 +435,7 @@ user-select: none;
     }
     .howboostworkstext{
       font-size: 45px !important;
+      font-family: 'Assistant', serif !important;
     }
 
     .howboostworks{

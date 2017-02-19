@@ -21,12 +21,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <!-- SIDENAVBAR -->
+    <ul id="slide-out" class="side-nav" style="background-color: #fff; opacity: 0.9;">
+    <div style="margin-top: 5em;text-align: right" >
+      <li><a href="#">דמי ניהול</a></li>
+      <li><a href="#">קרן השתלמות</a></li>
+      <li><a href="#">חסכון פרטי</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">עזרה</a></li>
+      <li><a class="waves-effect" href="#">אבטחה ופרטיות</a></li>
+      <li><a class="waves-effect" href="#">צור קשר</a></li>
+    </div>
+  </ul>
+  <!-- SIDENAVBAR / -->
 
   <!-- NAVBAR -->
   <div class="navbar-fixed section scrollspy" id="navbar-scroll" style="margin-top: -15px;">
     <nav id="navbar" style="box-shadow: 1px 1px 0px 1px #eeeeee;">
       <div class="nav-wrapper" style="margin-left: 5%; margin-right: 5%;">
         <a class="buttonsml buttonc navbtnstrt valign-wrapper" style="float: right;" href="#modal-contact"><span class="valign center-align" style="margin-left: -0.3em;">הצטרף</span></a>
+        <a style="color: #000; float: left;" href="#" data-activates="slide-out" id="button-collapse"><i class="material-icons">menu</i></a>
           <h1 class="logo brand-logo center" id="title">Boost</h1>
         <ul id="nav-mobile" class="left hide-on-med-and-down" style="font-family: 'Assistant', serif; font-weight: 100;">
           <li><a style="color: #000; font-size: 20px" href="#fifth-div">?עובד Boost איך</a></li>
@@ -62,6 +76,17 @@
       $('.navbtnstrt').addClass("animated fadeOutUpBig");
     }
 });
+
+
+        // Initialize collapse button
+  $("#button-collapse").sideNav({
+      menuWidth: 200, // Default is 300
+      edge: 'right', // Choose the horizontal origin
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true // Choose whether you can drag to open on touch screens
+  });
+  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  //$('.collapsible').collapsible();
 
 </script>
 <%= yield %>

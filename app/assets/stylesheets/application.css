@@ -413,6 +413,7 @@ user-select: none;
     .third-mrkt-s-div3{
       font-size: 24px !important;
       word-break: keep-all;
+      text-shadow: 1px 1px #888888;
     }
 
     /* FOURTH DIV */

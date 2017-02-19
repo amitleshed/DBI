@@ -31,6 +31,7 @@ h1{
 
 #third-div{
   height: 20em;
+  background-image: url("http://i.imgur.com/a1Zw7eG.png");
   background-color: #b5b4ae;
 }
 
@@ -409,12 +410,8 @@ user-select: none;
       margin-top: 0.8em !important;
       font-size: 47px !important;
     }
-    .second-mrkt-s-div3{
-      font-size: 20px !important;
-      word-break: keep-all;
-    }
     .third-mrkt-s-div3{
-      font-size: 20px !important;
+      font-size: 24px !important;
       word-break: keep-all;
     }
 

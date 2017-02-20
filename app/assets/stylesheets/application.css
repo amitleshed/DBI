@@ -184,12 +184,6 @@ user-select: none;
             user-select: none !important; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
-.marker{
-  background: yellow; 
-  padding-top: 2px; 
-  padding-bottom: -0.5em !important;
-
-}
 
 
 
@@ -433,7 +427,11 @@ user-select: none;
 
     /* FOURTH DIV */
     #fourth-div{
+      height: 40em;
       padding-top: 0 !important;
+    }
+    .firm-ul{
+      margin-top: 3em !important;
     }
     .firm-icon-width{
       width: 40px !important;

@@ -34,11 +34,22 @@
       var chart = c3.generate({
         bindto: "#chart1",
         data: {
-            columns: [
-                ['דמי ניהול מופחתים', 888000],
-                ['דמי ניהול מקסימליים', 734000]
+              columns: [
+                  ['דמי ניהול מופחתים', 888000],
+                  ['דמי ניהול מקסימליים', 734000]
             ],
-            type: 'bar'
+            type: 'bar',
+            labels: {
+                format: {
+                'דמי ניהול מופחתים': d3.format('$'),
+                'דמי ניהול מקסימליים': d3.format('$'),
+            }
+            },
+            colors: {
+            'דמי ניהול מקסימליים': '#b0bec5',
+            'דמי ניהול מופחתים': '#ff1744',
+            data3: '#0000ff'
+        },
         },
         bar: {
             width: {
@@ -54,7 +65,7 @@
     <div class="col s6" style="border-left: 1px solid #eeeeee;margin-top: 5em;">
      <div>
         <h1 class="first-mrkt-s-div2" style="margin-right:5%; text-align: right; font-weight: 100;">הזן את נתוניך</h1>
-        <h1 class="second-mrkt-s-div2" style="margin-right:5%; text-align: right; font-size: 30px; letter-spacing: 1px; color: #888888; margin-top: -15px; font-weight: 100;"><span class="marker" style="margin-bottom: -2em !important;">וגלה כמה דמי ניהול אתה משלם</span></h1>
+        <h1 class="second-mrkt-s-div2" style="margin-right:5%; text-align: right; font-size: 30px; letter-spacing: 1px; color: #888888; margin-top: -15px; font-weight: 100;"><mark>וגלה כמה דמי ניהול אתה משלם</mark></h1>
         <br><br>
         <input id="salary_param" class="cal-inputs" name="salary_param" data-salary type="text" placeholder="?מהי המשכורת שלך" style="width: 25%; float: right; text-align: right;margin-right: 5%;"/>
         <input id="age_param" class="cal-inputs" name="age_param" data-age type="text" placeholder="גיל כניסה לקרן" style="width: 25%; float: right; text-align: right;margin-right: 5%;"/>
@@ -68,7 +79,7 @@
         </div><br>
         <br/>
         <br/>
-        <h1 class="third-mrkt-s-div2" style="margin-right:5%;float:right; font-weight: 100;">דמי ניהול: &#8362;<span id="fees-result">0</span></h1>
+       <h1 class="third-mrkt-s-div2" style="margin-right:5%;float:right; font-weight: 100;">דמי ניהול: <mark>&#8362;<span id="fees-result">0</span></mark></h1>
         <!-- <h1 style="margin-right:5%;float:right;">סך הפנסיה: &#8362;<span id="pension-result">0</span></h1> -->
         <!-- 
         <h1 style="margin-right:5%;float:right">משכורת: &#8362;<span id="fees-result-salary">0</span></h1> -->
@@ -83,7 +94,7 @@
     <div id="third-div" class="col s12">
 <!--         <img style="z-index: -1;width:100%;" src="https://wallpaperscraft.com/image/scooter_moped_vespa_retro_mint_102397_3840x2160.jpg"> -->
           <div>
-          <h1 class="first-mrkt-s-div3" style="text-align: center;font-size: 60px;color: #fff;font-weight: 100; margin-top: 1em;">להיות במסלול המנצח תמיד</h1>
+          <h1 class="first-mrkt-s-div3" style="text-align: center;font-size: 60px;color: #fff;font-weight: 100; margin-top: 1em;">להיות במסלול המנצח <span style="border-bottom: 1px solid #fff">תמיד</span></h1>
           <h1 class="third-mrkt-s-div3" style="text-align: center;font-size: 35px;color: #fff;letter-spacing: 0px;font-weight: 100;"><%= t('.ttl_marketing3', locale: :he) %></h1>
       </div>
 </div>
@@ -92,10 +103,10 @@
     </div>
   </div>
 
-  <div id="fourth-div" class="section scrollspy">
-    <div style="margin-left: 10%; margin-right: 10%;">
+  <div id="fourth-div" class="section scrollspy valign-wapper">
+    <div style="margin-left: 10%; margin-right: 10%;" class="valign">
     <h1 style="text-align: center; font-weight: 100;font-size: 40px;">תשואת המסלולים בשנה האחרונה</h1>
-      <div id="chart2">
+      <div id="chart2" class="center-align">
         <script type="text/javascript">
 
           var migdal = "מגדל מקפת";
@@ -148,8 +159,7 @@
         });
         </script>
       </div>
-    <div style="margin-top: 6em; "></div> <!-- SPACE -->
-    <ul style="border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee" class="center-align">
+    <ul style="border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee; margin-top: 6em;" class="center-align firm-ul">
     <div style="">
       <li style="display:inline-block;" class="firm-icon">
         <%= image_tag("https://upload.wikimedia.org/wikipedia/he/thumb/e/ea/Clal_Bituach_logo.svg/1280px-Clal_Bituach_logo.svg.png", :style => "width:100px;", :class => "firm-icon-width")%>

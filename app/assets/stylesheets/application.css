@@ -18,7 +18,8 @@ h1{
 }
 
 #first-div{
-  background-image: url("http://i.imgur.com/9CR8tu7.png");
+  /*ORIGINAL BG http://i.imgur.com/9CR8tu7.png*/
+  background-image: url("http://i.imgur.com/3PLuL01.png");
   background-size: 100%;
   background-color: #eeeeee;
   height: 45em;

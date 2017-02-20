@@ -410,14 +410,6 @@ user-select: none;
       margin-right: 1% !important;
       margin-left: 0 !important;
     }
-    .cal-inputs-select{
-      width: 100% !important; 
-      margin-right: 1% !important;
-      margin-left: 0 !important;
-    }
-    .cal-inputs-select:focus {
-        outline: none;
-    }
     .first-mrkt-s-div2{
       font-size: 30px !important;
     }

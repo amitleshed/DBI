@@ -20,9 +20,9 @@ $(document).ready(function() {
                 worker_provision: 7.5, // percent
                 severance_pay_provisions: true, // does the employer put to the fund severance pay provisions
 
-                estimated_yield: 4, // percent
+                estimated_yield: 2.7, // percent
 
-                yearly_management_fee: 0.5, // percent
+                yearly_management_fee: 0.25, // percent
                 deposits_fee: 2, // percent (premium)
 
                 age_years: (parseInt($ageParam.val())) || 0,

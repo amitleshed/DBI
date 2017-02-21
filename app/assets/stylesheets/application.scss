@@ -1,3 +1,5 @@
+$boost-pink: #E91E63;
+
 body{
 
 }
@@ -10,7 +12,7 @@ h1{
 }
 
 #title{
-  color: #E91E63;
+  color: $boost-pink;
   font-size: 40px;
   font-weight: 100;
   display: inline; 
@@ -62,7 +64,7 @@ h1{
   height: 25%;
 }
 .boost-btn{
-  background-color: #FFC107 !important;
+  background-color: $boost-pink !important;
   margin-left: 50%;
 }
  /* label underline focus color */

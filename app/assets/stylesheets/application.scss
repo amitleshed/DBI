@@ -33,8 +33,9 @@ h1{
 }
 
 #third-div{
-  height: 20em;
+  height: 45em;
   background-image: url("http://i.imgur.com/a1Zw7eG.png");
+  background-size: 280%;
   background-color: #b5b4ae;
 }
 
@@ -185,6 +186,9 @@ user-select: none;
         -ms-user-select: none !important; /* Internet Explorer/Edge */
             user-select: none !important; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+}
+.infinite-icon{
+  width: 20%;
 }
 
 
@@ -417,6 +421,9 @@ user-select: none;
     }
 
     /*THIRD DIV*/
+    #third-div{
+      background-size: 500% !important;
+    }
     .first-mrkt-s-div3{
       margin-top: 0.5em !important;
       font-size: 47px !important;
@@ -429,7 +436,7 @@ user-select: none;
 
     /* FOURTH DIV */
     #fourth-div{
-      height: 40em;
+      height: 42em;
       padding-top: 0 !important;
     }
     .firm-ul{

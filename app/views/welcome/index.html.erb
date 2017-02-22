@@ -27,6 +27,16 @@
   });
     
     });
+
+    $(window).resize(function () {
+    var viewportWidth = $(window).width();
+    if (viewportWidth < 1000px) {
+            $("#first-div").removeClass("scrollify");
+            $("#second-div").removeClass("scrollify");
+            $("#third-div").removeClass("scrollify");
+            $("#fourth-div").removeClass("scrollify");
+    }
+  });
   </script>
 
 

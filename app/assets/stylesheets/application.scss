@@ -159,6 +159,10 @@ user-select: none;
   font-family: 'Assistant', serif;
   color: #fff !important;
 }
+#welcome-list-h1-nobullet{
+  font-family: 'Assistant', serif;
+  color: #fff !important;
+}
 #welcome-list-h1::before {
   content: "•";
   color: #18FFFF;
@@ -167,11 +171,11 @@ user-select: none;
   font-size: 30px;
 }
 ::selection {
-  background: #E91E63; /* WebKit/Blink Browsers */
+  background: $boost-pink; /* WebKit/Blink Browsers */
   color: #fff;
 }
 ::-moz-selection {
-  background: #E91E63; /* Gecko Browsers */
+  background: $boost-pink; /* Gecko Browsers */
   color: #fff;
 }
 #modal-contact{
@@ -434,7 +438,7 @@ user-select: none;
       font-size: 47px !important;
     }
     .third-mrkt-s-div3{
-      font-size: 29px !important;
+      font-size: 35px !important;
       word-break: keep-all;
       text-shadow: 1px 1px #888888;
     }
@@ -456,7 +460,7 @@ user-select: none;
 
     /* FIFTH DIV*/
     #fifth-div{
-      height: 25em !important;
+      height: 45em !important;
     }
     .howboostworkstext{
       font-size: 45px !important;

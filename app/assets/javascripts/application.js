@@ -17,6 +17,7 @@
 //= require d3
 //= require underscore
 //= require vivus.min
+//= require scrollify
 //= require_tree .
 
       //PARALLAX

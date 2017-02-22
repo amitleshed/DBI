@@ -366,6 +366,8 @@ user-select: none;
   /* -------------------------------------------------------------------------------------------------------------------------------------- */
 
   @media only screen and (max-width: 1000px) {
+    .logo{
+    }
     /*FIRST DIV*/
     #first-div{
       background-image: url("http://i.imgur.com/BMp11mA.png");
@@ -418,6 +420,9 @@ user-select: none;
     }
     .third-mrkt-s-div2{
       font-size: 30px !important;
+    }
+     .fourth-mrkt-s-div2{
+      font-size: 10px !important;
     }
 
     /*THIRD DIV*/
@@ -473,6 +478,8 @@ user-select: none;
     }
 
 }
-
+.halfdiv{
+  display: block !important;
+}
 
 

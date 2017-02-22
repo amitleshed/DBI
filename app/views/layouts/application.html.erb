@@ -85,6 +85,17 @@
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
   //$('.collapsible').collapsible();
 
+
+    $(window).resize(function () {
+    var viewportWidth = $(window).width();
+    if (viewportWidth < 1000) {
+            $("#first-div").removeClass("scrollify");
+            $("#second-div").removeClass("scrollify");
+            $("#third-div").removeClass("scrollify");
+            $("#fourth-div").removeClass("scrollify");
+    }
+  });
+
 </script>
 <%= yield %>
 

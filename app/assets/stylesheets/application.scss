@@ -1,4 +1,5 @@
 $boost-pink: #E91E63;
+$boost-green: #18FFFF;
 
 body{
 
@@ -165,7 +166,7 @@ user-select: none;
 }
 #welcome-list-h1::before {
   content: "•";
-  color: #18FFFF;
+  color: $boost-green;
   display: inline-block !important;
   margin-left: 0.2em;
   font-size: 30px;

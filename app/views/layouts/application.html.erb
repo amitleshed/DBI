@@ -85,6 +85,26 @@
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
   //$('.collapsible').collapsible();
 
+      $(function() {
+      $.scrollify({
+    section : ".scrollify",
+    interstitialSection : ".scrollify2",
+    easing: "easeOutExpo",
+    scrollSpeed: 800,
+    offset : 0,
+    scrollbars: true,
+    standardScrollElements: "",
+    setHeights: true,
+    overflowScroll: true,
+    updateHash: true,
+    touchScroll:true,
+    before:function() {},
+    after:function() {},
+    afterResize:function() {},
+    afterRender:function() {}
+  });
+    
+    });
 
     $(window).resize(function () {
     var viewportWidth = $(window).width();

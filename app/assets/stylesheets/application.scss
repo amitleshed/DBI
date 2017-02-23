@@ -22,8 +22,8 @@ h1{
 
 #first-div{
   /*ORIGINAL BG http://i.imgur.com/9CR8tu7.png*/
-  background-image: url("http://i.imgur.com/3PLuL01.png");
-  background-size: 100%;
+  background-image: url("http://i.imgur.com/HgX2aHA.png");
+  background-size: 300%;
   background-color: #eeeeee;
   height: 45em;
 }
@@ -62,8 +62,7 @@ h1{
 }
 
 .howboostworks{
-  width: 50%;
-  height: 25%;
+  width: 35%;
 }
 .boost-btn{
   background-color: $boost-pink !important;
@@ -470,7 +469,6 @@ user-select: none;
 
     .howboostworks{
         width: 90% !important;
-        height: 45% !important;
       }
     .noselect {
       -webkit-touch-callout: none !important; /* iOS Safari */

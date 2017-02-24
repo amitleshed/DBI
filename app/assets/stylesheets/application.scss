@@ -68,22 +68,29 @@ h1{
   background-color: $boost-pink !important;
   margin-left: 50%;
 }
+.inputs{
+  border-bottom: 1px solid #fff !important;
+  font-family: 'Assistant', serif;
+  font-size: 25px !important;
+  font-weight: 100;
+}
  /* label underline focus color */
  .inputs:focus {
-   border-bottom: 1px solid grey !important;
-   box-shadow: 0 1px 0 0 grey !important;
+   border-bottom: 1px solid #fff !important;
+   box-shadow: 0 1px 0 0 #fff !important;
+   color: #fff;
  }
  .inputs::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #888888;
+  color: #fff;
 }
 .inputs::-moz-placeholder { /* Firefox 19+ */
-  color: #888888;
+  color: #fff;
 }
 .inputs:-ms-input-placeholder { /* IE 10+ */
-  color: #888888;
+  color: #fff;
 }
 .inputs:-moz-placeholder { /* Firefox 18- */
-  color: #888888;
+  color: #fff;
 }
 
  .firm-icon {
@@ -149,12 +156,20 @@ user-select: none;
 .buttonc {
     background-color: #E91E63;
     color: #fff;
+    &:hover{
+      background-color: #e7e7e7;
+      color: #000;
+    }
+}
+.buttonmodal {
+    background-color: #e7e7e7;
+    color: #fff;
+    &:hover{
+      background-color: #fff;
+      color: #e7e7e7;
+    }
 }
 
-.buttonc:hover {
-  background-color: #e7e7e7;
-  color: #000;
-}
 #welcome-list-h1{
   font-family: 'Assistant', serif;
   color: #fff !important;
@@ -179,8 +194,6 @@ user-select: none;
   color: #fff;
 }
 #modal-contact{
-  background-color: #dddddd;
-  width: 30%;
 }
 .noselect {
   -webkit-touch-callout: none !important; /* iOS Safari */
@@ -194,9 +207,6 @@ user-select: none;
 .infinite-icon{
   width: 20%;
 }
-
-
-
 
 
 /*-- ---------------Chart-------------- --*/
@@ -399,7 +409,8 @@ user-select: none;
     }
 
     #modal-contact{
-      width: 100%;
+      width: 90% !important;
+      margin-top: 40% !important; 
     }
     .navbtnstrt{
       margin-top: 0.4em;

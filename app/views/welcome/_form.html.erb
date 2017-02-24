@@ -1,15 +1,17 @@
 <%= form_for @contact, url: { action: 'create', controller: 'contacts' }, remote: true do |f| %>
 <div>
-  <%= f.text_field :name, placeholder: "שם מלא", :style => "text-align:right;margin-top:15px;", :class => "inputs"%>
-</div> 
+  <div>
+    <%= f.text_field :name, placeholder: "שם מלא", :style => "text-align:right;margin-top:15px;", :class => "inputs"%>
+  </div> 
 
-<div>
-  <%= f.text_field :email, placeholder: "כתובת דוא״ל", :style => "text-align:right;", :class => "inputs"  %>
-</div>
+  <div>
+    <%= f.text_field :email, placeholder: "כתובת דוא״ל", :style => "text-align:right;", :class => "inputs"  %>
+  </div>
 
-<div>
-  <%= f.text_field :cellnum, placeholder: "טלפון", :style => "text-align:right;", :class => "inputs"  %>
-</div>
+  <div>
+    <%= f.text_field :cellnum, placeholder: "טלפון", :style => "text-align:right;", :class => "inputs"  %>
+  </div>
 
-  <%= f.submit "!לפנסיה שלך Boost תן", :class => "button buttonc", :style => "width:100%;margin-top: -18px;" %>
+    <%= f.submit "לחץ", :class => "button buttonmodal", :style => "width: 100%;" %>
+  </div>
 <% end %>

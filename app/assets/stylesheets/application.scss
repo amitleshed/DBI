@@ -207,7 +207,20 @@ user-select: none;
 .infinite-icon{
   width: 20%;
 }
-
+.exit-img{
+    -moz-transition: -moz-transform ease 0.4s;
+  -webkit-transition: -webkit-transform ease 0.4s;
+  -o-transition: -o-transform ease 0.4s;
+  -ms-transition: -ms-transform ease 0.4s;
+  transition: transform ease 0.4s;
+ &:hover {
+     -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+ }
+}
 
 
 /*-- ---------------Chart-------------- --*/

@@ -1,3 +1,4 @@
+<% @contact = Contact.new  %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,15 +23,11 @@
 </head>
 <body>
   <!-- SIDENAVBAR -->
-    <ul id="slide-out" class="side-nav" style="background-color: #fff; opacity: 0.9;font-family: 'Assistant', serif;">
+    <ul id="slide-out" class="side-nav" style="background-color: #fff;font-family: 'Assistant', serif;">
     <div style="margin-top: 5em;text-align: right" >
-      <li><a href="#" style="font-size: 18px">דמי ניהול</a></li>
-      <li><a href="#" style="font-size: 18px">קרן השתלמות</a></li>
-      <li><a href="#" style="font-size: 18px">חסכון פרטי</a></li>
+      <li><a href="/" style="font-size: 18px">דף הבית</a></li>
+      <li><a href="/faq" style="font-size: 18px">שאלות נפוצות</a></li>
       <li><div class="divider" style="font-size: 18px"></div></li>
-      <li><a class="subheader" style="font-size: 18px">עזרה</a></li>
-      <li><a class="waves-effect" href="#" style="font-size: 18px">אבטחה ופרטיות</a></li>
-      <li><a class="waves-effect" href="#" style="font-size: 18px">צור קשר</a></li>
     </div>
   </ul>
   <!-- SIDENAVBAR / -->
@@ -40,12 +37,10 @@
     <nav id="navbar" style="box-shadow: 1px 1px 0px 1px #eeeeee;">
       <div class="nav-wrapper" style="margin-left: 5%; margin-right: 5%;">
         <a class="buttonsml buttonc navbtnstrt valign-wrapper" style="float: right;" href="#animatedModal" id="demo01"><span class="valign center-align" style="margin-left: -0.3em;">הצטרף</span></a>
-        <a style="color: #000; float: left;" href="#" data-activates="slide-out" id="button-collapse"><i class="material-icons">menu</i></a>
-          <h1 class="logo brand-logo center" id="title"><%= image_tag("http://i.imgur.com/qv44PsE.png", :class => "logo undraggableimg", :style => "width: 90px;")%><span style="font-size: 12px; margin-top: -20px;display: block;color: #000; letter-spacing: 2px;margin-left: 4px;">YOUR PENSION</span></h1>
+        <%= link_to 'שאלות נפוצות', faq_path, :style => "color:#000", :class => "faq-btn buttonsml buttonmodal"%>
+        <a class="side-nav-btn" style="color: #000; float: left;" href="#" data-activates="slide-out" id="button-collapse"><i class="material-icons">menu</i></a>
+          <h1 class="logo brand-logo center" id="title"><%=link_to image_tag("http://i.imgur.com/qv44PsE.png", :class => "logo undraggableimg", :style => "width: 90px;"), root_path%><span style="font-size: 12px; margin-top: -20px;display: block;color: #000; letter-spacing: 2px;margin-left: 4px;">YOUR PENSION</span></h1>
         <ul id="" class="left hide-on-med-and-down" style="font-family: 'Assistant', serif; font-weight: 100;">
-          <li><a style="color: #000; font-size: 20px" href="#fifth-div">?עובד Boost איך</a></li>
-          <li><a style="color: #000; font-size: 20px" href="#fourth-div">תשואות</a></li>
-          <li><a style="color: #000; font-size: 20px" href="#chart1div">דמי ניהול</a></li>
         </ul>
       </div>
     </nav>
@@ -64,8 +59,8 @@
     if ($(window).scrollTop() > 470) {
         $('.navbtnstrt').removeClass("animated fadeOutUpBig");
         $('.navbtnstrt').show();
-        $('.navbtnstrt').addClass("animated fadeInDownBig"); 
-      } 
+        $('.navbtnstrt').addClass("animated fadeInDownBig");
+      }
      else
      {
       $('.navbtnstrt').removeClass("animated fadeInDownBig");
@@ -73,33 +68,50 @@
     }
 });
 
-
         // Initialize collapse button
   $("#button-collapse").sideNav({
       menuWidth: 160, // Default is 300
-      edge: 'right', // Choose the horizontal origin
+      edge: 'left', // Choose the horizontal origin
       closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
       draggable: true // Choose whether you can drag to open on touch screens
   });
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
   //$('.collapsible').collapsible();
 
-      $(function() {
-      $.scrollify({
-    section : ".scrollify",
-    interstitialSection : ".scrollify2",
-    easing: "easeOutExpo",
-    scrollSpeed: 800,
-  });
-    
-    });
-
-    if ($(window).width() < 1000) {
-      $.scrollify.disable();
-    };
-
 </script>
 <%= yield %>
 
 </body>
+<script>
+
+
+// CONTACT MODAL
+$(document).ready(function() {
+    $("#demo01").animatedModal({
+        animatedIn:'fadeInDown',
+        animatedOut:'fadeOutUp',
+        color: "#10B5B5",
+    });
+    $("#demo02").animatedModal({
+        animatedIn:'fadeInDown',
+        animatedOut:'fadeOutUp',
+        color: "#10B5B5",
+    });
+}); // MODAL /
+
+</script>
+<div id="animatedModal">
+   <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+   <div class="modal-contact" id="modal-contact" style="width: 50%; margin: 0 auto;margin-top: 10%;">
+             <%= render 'form' %>
+   </div>
+   <div class="close-animatedModal center-align" style="margin-top: 8em; color:#fff">
+       <%= image_tag("http://i.imgur.com/msYWCEQ.png", :style => "width: 5%;", :class => "exit-img undraggableimg")%>
+   </div>
+</div>
+
+
+<!-- CONTACT MODAL // -->
+
+
 </html>

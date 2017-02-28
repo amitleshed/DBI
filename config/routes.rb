@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   root to: 'welcome#index'
+  get 'faq', to: 'welcome#faq'
 
   resources :contacts, only: [:new, :create]
 

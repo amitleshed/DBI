@@ -20,10 +20,10 @@ $(document).ready(function() {
                 worker_provision: 7.5, // percent
                 severance_pay_provisions: true, // does the employer put to the fund severance pay provisions
 
-                estimated_yield: 2.7, // percent
+                estimated_yield: 3, // percent
 
-                yearly_management_fee: 0.25, // percent
-                deposits_fee: 2, // percent (premium)
+                yearly_management_fee: 0.35, // percent
+                deposits_fee: 3.5, // percent (premium)
 
                 age_years: (parseInt($ageParam.val())) || 0,
                 age_months: 0,
@@ -52,7 +52,7 @@ $(document).ready(function() {
 
             pension_sum += monthly_provision_after_deposits_fee;
         }
-        
+
         // $pensionResult.text(pension_sum.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,"));
         return parseInt(pension_sum);
     };

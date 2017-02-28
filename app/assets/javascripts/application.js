@@ -27,7 +27,7 @@
       //PARALLAX /
 
       //SCROLLSPY
-  $(document).ready(function(){
+  $(document).on('turbolinks:load',function(){
     $('.scrollspy').scrollSpy();
   });
     //SCROLLSPY /
@@ -46,9 +46,3 @@
     $('select').material_select();
   });
     // SELECT RADIO BTN /
-
-
-        
-
-
-

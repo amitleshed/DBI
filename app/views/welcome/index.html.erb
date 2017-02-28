@@ -1,18 +1,3 @@
-     <script> //MODAL
-        $(document).ready(function() {
-            $("#demo01").animatedModal({
-                animatedIn:'fadeInDown',
-                animatedOut:'fadeOutUp',
-                color: "#10B5B5",
-            });
-            $("#demo02").animatedModal({
-                animatedIn:'fadeInDown',
-                animatedOut:'fadeOutUp',
-                color: "#10B5B5",
-            });
-        }); // MODAL /
-     </script> 
-
 <body>
     <div id="first-div" class="scrollify">
 <!--         <img style="width:200%;" src="http://previews.123rf.com/images/_fla/_fla1301/_fla130100155/17590380-Cartoon-hand-drawing-houses-Stock-Vector-house-town-city.jpg"> -->
@@ -89,7 +74,7 @@
         <br/>
        <h1 class="third-mrkt-s-div2" style="margin-right:5%;float:right; font-weight: 100;text-align: right;">דמי ניהול: <mark>&#8362;<span id="fees-result">0</span></mark></h1>
         <!-- <h1 style="margin-right:5%;float:right;">סך הפנסיה: &#8362;<span id="pension-result">0</span></h1> -->
-        <!-- 
+        <!--
         <h1 style="margin-right:5%;float:right">משכורת: &#8362;<span id="fees-result-salary">0</span></h1> -->
         <!-- <input id="name" name="name" type="text" /> -->
         <br>
@@ -202,9 +187,31 @@
     </div>
   </div>
 
-    <div id="fifth-div" class="section scrollspy scrollify" style="height: 34em;">
+
+    <div id="prices-div" dir="rtl">
+      <br>
+      <div class="center-align">
+        <%= image_tag("http://i.imgur.com/rjdhslc.png", :class => "center-align coffee-img", :style => "width: 5%; margin-bottom: -20px;")%>
+      </div>
+      <h1 class="center-align" style="color:#fff;">אז כמה זה עולה לי?</h1>
+      <h1 class="center-align" style="color:#fff;font-size:30px;">לא יותר מכוס קפה.</h1>
+      <div class="row" style="margin-top: 5em;">
+        <div class="col s4 push-s6 price-cube" style="height: 20em;background-color:#fff; border-left: 1px solid #e0e0e0">
+          <h1 class="center-align price-cube-text" style="font-size: 50px;">מוצר יחיד</h1>
+          <h1 class="center-align price-cube-text" style="font-size: 30px">12ש״ח/לחודש</h1>
+        </div>
+        <div class="col s4 pull-s2 price-cube" style="height: 20em;background-color:#fff; border-right: 1px solid #e0e0e0">
+          <h1 class="center-align price-cube-text" style="font-size: 50px;">שני מוצרים ומעלה</h1>
+          <h1 class="center-align price-cube-text" style="font-size: 30px">22ש״ח/לחודש</h1>
+        </div>
+      </div>
+      <h1 style="font-size: 25px;margin:0; color: #fff;" class="center-align more-services-p">השירות ניתן גם עבור קרן השתלמות, ביטוח מנהלים וחסכונות פרטיים.</h1>
+    </div>
+
+
+    <div id="fifth-div" class="section scrollspy scrollify" dir="rtl">
       <div style="padding-top: 0em;">
-          <p class="howboostworkstext" style="text-align: center;font-size: 60px;color: #757575;font-weight: 900;font-family: 'Assistant', serif;">?עובד <span class="howboostworkstext" style="color:#E91E63; font-size: 60px;font-weight: 100;font-family: 'Assistant', serif;">Boost</span> איך</p>
+          <p class="howboostworkstext" style="text-align: center;font-size: 60px;color: #757575;font-weight: 900;font-family: 'Assistant', serif;">איך זה עובד?</p>
       </div>
       <div style="display:block; padding-top: 2em; padding-bottom: 10em;" class="center-align">
           <%= image_tag("http://i.imgur.com/LHYAp7m.png", :class => "undraggableimg howboostworks")%>
@@ -237,14 +244,3 @@
           </div>
         </footer>
 </body>
-
-
-     <div id="animatedModal">
-        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-        <div class="modal-contact" id="modal-contact" style="width: 50%; margin: 0 auto;margin-top: 10%;">
-                  <%= render 'form' %>
-        </div>
-        <div class="close-animatedModal center-align" style="margin-top: 8em; color:#fff"> 
-            <%= image_tag("http://i.imgur.com/msYWCEQ.png", :style => "width: 5%;", :class => "exit-img undraggableimg")%>
-        </div>
-    </div>

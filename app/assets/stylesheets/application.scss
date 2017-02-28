@@ -2,8 +2,12 @@ $boost-pink: #E91E63;
 $boost-green: #18FFFF;
 
 body{
-
+  background-color: #fff !important;
 }
+.side-nav-btn{
+  display: none;
+}
+
 #navbar{
   background-color: #fff;
 }
@@ -16,7 +20,7 @@ h1{
   color: $boost-pink;
   font-size: 40px;
   font-weight: 100;
-  display: inline; 
+  display: inline;
   margin-top: 0.2em;
 }
 
@@ -29,7 +33,7 @@ h1{
 }
 
 #second-div{
-  width: 100%; 
+  width: 100%;
   background-color: #fff;
 }
 
@@ -41,12 +45,23 @@ h1{
 }
 
 #fourth-div{
-  width: 100%; 
-  height: 45em; 
+  width: 100%;
+  height: 50em;
   background-color: #fff;
+}
+#prices-div{
+  height: 46em;
+  background-color: #bdbdbd;
+}
+.price-cube{
+  border-radius: 15%;
+}
+.price-cube-text{
+  color: #757575;
 }
 #fifth-div{
   background-color: #F5F5F5;
+  height: 50em;
 }
 
 #marketing-sentence{
@@ -63,6 +78,10 @@ h1{
 
 .howboostworks{
   width: 35%;
+}
+.howboostworkstext{
+  margin-bottom: 0 !important;
+  margin-top: 0.5em !important;
 }
 .boost-btn{
   background-color: $boost-pink !important;
@@ -95,7 +114,7 @@ h1{
 
  .firm-icon {
     margin-left: 1em;
-    opacity: 0.3;
+    opacity: 0.7;
     transition: 0.3;
  }
   .firm-icon:hover {
@@ -104,7 +123,7 @@ h1{
     transition: 0.3;
  }
  .undraggableimg{
-  user-drag: none; 
+  user-drag: none;
 user-select: none;
 -moz-user-select: none;
 -webkit-user-drag: none;
@@ -163,10 +182,10 @@ user-select: none;
 }
 .buttonmodal {
     background-color: #e7e7e7;
-    color: #fff;
+    color: #000;
     &:hover{
       background-color: #fff;
-      color: #e7e7e7;
+      color: #000;
     }
 }
 
@@ -221,6 +240,209 @@ user-select: none;
     transform: rotate(90deg);
  }
 }
+
+  @media only screen and (max-width: 1000px) {
+
+    /*NAVBAR*/
+    .logo{
+    }
+    .side-nav-btn{
+      display: inline !important;
+    }
+    .faq-btn{
+      display: none;
+    }
+
+    /*FIRST DIV*/
+    #first-div{
+      background-image: url("http://i.imgur.com/BMp11mA.png");
+      background-size: 300% !important;
+      height: 50em;
+    }
+    .first-mrkt-s-m{
+      margin-right: 0 !important;
+      text-align: center;
+      font-size: 47px !important;
+    }
+
+    .first-mrkt-ul{
+      margin-left: 3em !important;
+      margin-right: 3em !important;
+      margin-top: 2em !important;
+      text-shadow: 1px 1px #888888;
+      padding: 0;
+    }
+    .first-div-bullet{
+      font-size: 20px !important;
+    }
+    .join-btn{
+      width: 100% !important;
+    }
+
+    #modal-contact{
+      width: 90% !important;
+      margin-top: 30% !important;
+    }
+    .navbtnstrt{
+      margin-top: 0.4em;
+      height: 2em;
+    }
+    #title{
+      margin-top:0.1em;
+    }
+    .exit-img{
+      width: 15% !important;
+  }
+
+    /*SECOND DIV*/
+
+    .cal-inputs{
+      width: 100% !important;
+      margin-right: 1% !important;
+      margin-left: 0 !important;
+    }
+    .first-mrkt-s-div2{
+      font-size: 30px !important;
+    }
+    .second-mrkt-s-div2{
+      font-size: 20px !important;
+    }
+    .third-mrkt-s-div2{
+      font-size: 30px !important;
+    }
+     .fourth-mrkt-s-div2{
+      font-size: 10px !important;
+    }
+
+    /*THIRD DIV*/
+    #third-div{
+      background-size: 800% !important;
+    }
+    .first-mrkt-s-div3{
+      margin-top: 0.5em !important;
+      font-size: 47px !important;
+    }
+    .third-mrkt-s-div3{
+      font-size: 35px !important;
+      word-break: keep-all;
+      text-shadow: 1px 1px #888888;
+    }
+
+    /* FOURTH DIV */
+    #fourth-div{
+      height: 42em;
+      padding-top: 0 !important;
+    }
+    .firm-ul{
+      margin-top: 3em !important;
+    }
+    .firm-icon-width{
+      width: 45px !important;
+    }
+    .migdal-icon-width{
+      width: 20px !important;
+    }
+    /* PRICES DIV */
+    #prices-div{
+      height: 46em;
+    }
+    .price-cube{
+      margin-top: -20px;
+      border-radius: 0 !important;
+    }
+    .price-cube-text{
+      font-size: 20px !important;
+    }
+    .more-services-p{
+      margin-top: -10px !important;
+      font-size: 15px !important;
+    }
+    .coffee-img{
+      width: 10% !important;
+    }
+    /* FIFTH DIV*/
+    #fifth-div{
+      height: 43em !important;
+    }
+    .howboostworkstext{
+      font-size: 45px !important;
+      font-family: 'Assistant', serif !important;
+    }
+
+    .howboostworks{
+        width: 90% !important;
+      }
+    .noselect {
+      -webkit-touch-callout: none !important; /* iOS Safari */
+        -webkit-user-select: none !important; /* Safari */
+         -khtml-user-select: none !important; /* Konqueror HTML */
+           -moz-user-select: none !important; /* Firefox */
+            -ms-user-select: none !important; /* Internet Explorer/Edge */
+                user-select: none !important; /* Non-prefixed version, currently
+                                      supported by Chrome and Opera */
+    }
+
+    // FAQ
+    .tabs-faq{
+      display: none;
+    }
+    .navbtns-faq-title-fixed{
+      padding-top: 0 !important;
+      font-size: 14px !important;
+    }
+
+}
+
+
+
+
+/* FAQ FAQ FAQ ----------------------------------------------------------------------------------*/
+.navbtns-faq{
+  background-color: #fff;
+  height:15em;
+  border-bottom: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
+  color: #757575;
+  font-weight: 100 !important;
+    &:hover{
+      opacity: 0.5;
+      border-bottom: 5px solid $boost-pink;
+    }
+}
+.pfaq{
+  color: #757575;
+  font-size: 20px;
+  text-align: justify;
+}
+.h1faq{
+  color: #757575;
+}
+.fixed-tabs-faq{
+  position: fixed;
+  width: 100% !important;
+  top: 30px;
+}
+.fixed-navbtns-faq{
+  background-color: #fff;
+  height:5em;
+  border-bottom: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
+  color: #757575;
+  font-weight: 100 !important;
+    &:hover{
+      border-bottom: 5px solid $boost-pink;
+    }
+}
+/* FAQ FAQ FAQ ----------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
 
 
 /*-- ---------------Chart-------------- --*/
@@ -392,125 +614,3 @@ user-select: none;
   /*  font-size: 28px !important;*/ }
 
   /* -------------------------------------------------------------------------------------------------------------------------------------- */
-
-  @media only screen and (max-width: 1000px) {
-    .logo{
-    }
-    /*FIRST DIV*/
-    #first-div{
-      background-image: url("http://i.imgur.com/BMp11mA.png");
-      background-size: 300% !important;
-      height: 50em;
-    }
-    .first-mrkt-s-m{
-      margin-right: 0 !important;
-      text-align: center;
-      font-size: 47px !important;
-    }
-
-    .first-mrkt-ul{
-      margin-left: 3em !important;
-      margin-right: 3em !important;
-      margin-top: 2em !important;
-      text-shadow: 1px 1px #888888;
-      padding: 0;
-    }
-    .first-div-bullet{
-      font-size: 20px !important;
-    }
-    .join-btn{
-      width: 100% !important; 
-    }
-
-    #modal-contact{
-      width: 90% !important;
-      margin-top: 30% !important; 
-    }
-    .navbtnstrt{
-      margin-top: 0.4em;
-      height: 2em;
-    }
-    #title{
-      margin-top:0.1em;
-    }
-    .exit-img{
-      width: 15% !important;
-  }
-
-    /*SECOND DIV*/
-
-    .cal-inputs{
-      width: 100% !important; 
-      margin-right: 1% !important;
-      margin-left: 0 !important;
-    }
-    .first-mrkt-s-div2{
-      font-size: 30px !important;
-    }
-    .second-mrkt-s-div2{
-      font-size: 20px !important;
-    }
-    .third-mrkt-s-div2{
-      font-size: 30px !important;
-    }
-     .fourth-mrkt-s-div2{
-      font-size: 10px !important;
-    }
-
-    /*THIRD DIV*/
-    #third-div{
-      background-size: 800% !important;
-    }
-    .first-mrkt-s-div3{
-      margin-top: 0.5em !important;
-      font-size: 47px !important;
-    }
-    .third-mrkt-s-div3{
-      font-size: 35px !important;
-      word-break: keep-all;
-      text-shadow: 1px 1px #888888;
-    }
-
-    /* FOURTH DIV */
-    #fourth-div{
-      height: 42em;
-      padding-top: 0 !important;
-    }
-    .firm-ul{
-      margin-top: 3em !important;
-    }
-    .firm-icon-width{
-      width: 40px !important;
-    }
-    .migdal-icon-width{
-      width: 15px !important;
-    }
-
-    /* FIFTH DIV*/
-    #fifth-div{
-      height: 50em !important;
-    }
-    .howboostworkstext{
-      font-size: 45px !important;
-      font-family: 'Assistant', serif !important;
-    }
-
-    .howboostworks{
-        width: 90% !important;
-      }
-    .noselect {
-      -webkit-touch-callout: none !important; /* iOS Safari */
-        -webkit-user-select: none !important; /* Safari */
-         -khtml-user-select: none !important; /* Konqueror HTML */
-           -moz-user-select: none !important; /* Firefox */
-            -ms-user-select: none !important; /* Internet Explorer/Edge */
-                user-select: none !important; /* Non-prefixed version, currently
-                                      supported by Chrome and Opera */
-    }
-
-}
-.halfdiv{
-  display: block !important;
-}
-
-

@@ -84,16 +84,14 @@
       </div>
 
   <div class="row">
-    <div id="third-div" class="col s12 scrollify">
-      <div>
-        <div class="center-align" style="margin-top: 2em;">
-          <%= image_tag("http://i.imgur.com/etbEfkd.png", :class => "infinite-icon undraggableimg")%>
+    <div id="third-div" class="col s12">
+        <div id="third-div-wrapper">
+          <div class="center-align" style="margin-top: 2em;">
+            <%= image_tag("http://i.imgur.com/etbEfkd.png", :class => "infinite-icon undraggableimg")%>
+          </div>
+            <h1 class="first-mrkt-s-div3" style="text-align: center;font-size: 60px;color: #fff;font-weight: 400; margin-top: 1em;text-shadow: 1px 1px 1px #888888">להיות במסלול המנצח <span style="border-bottom: 1px solid #fff">תמיד</span></h1>
+            <h1 class="third-mrkt-s-div3" style="text-align: center;font-size: 35px;color: #fff;letter-spacing: 0px;font-weight: 400;text-shadow: 1px 1px 1px #888888"><%= t('.ttl_marketing3', locale: :he) %></h1>
         </div>
-          <h1 class="first-mrkt-s-div3" style="text-align: center;font-size: 60px;color: #fff;font-weight: 100; margin-top: 1em;">להיות במסלול המנצח <span style="border-bottom: 1px solid #fff">תמיד</span></h1>
-          <h1 class="third-mrkt-s-div3" style="text-align: center;font-size: 35px;color: #fff;letter-spacing: 0px;font-weight: 100;text-shadow: 1px 1px 1px #888888"><%= t('.ttl_marketing3', locale: :he) %></h1>
-      </div>
-</div>
-      <div style="margin-left: 10%; margin-right: 10%;">
       </div>
     </div>
 
@@ -188,6 +186,16 @@
   </div>
 
 
+    <div id="fifth-div" class="section scrollspy scrollify" dir="rtl">
+      <div style="padding-top: 0em;">
+          <p class="howboostworkstext" style="text-align: center;font-size: 60px;color: #757575;font-weight: 900;font-family: 'Assistant', serif;">איך זה עובד?</p>
+      </div>
+      <div style="display:block; padding-top: 2em; padding-bottom: 10em;" class="center-align">
+          <%= image_tag("http://i.imgur.com/LHYAp7m.png", :class => "undraggableimg howboostworks")%>
+      </div>
+    </div>
+
+
     <div id="prices-div" dir="rtl">
       <br>
       <div class="center-align">
@@ -196,25 +204,11 @@
       <h1 class="center-align" style="color:#fff;">אז כמה זה עולה לי?</h1>
       <h1 class="center-align" style="color:#fff;font-size:30px;">לא יותר מכוס קפה.</h1>
       <div class="row" style="margin-top: 5em;">
-        <div class="col s4 push-s6 price-cube" style="height: 20em;background-color:#fff; border-left: 1px solid #e0e0e0">
-          <h1 class="center-align price-cube-text" style="font-size: 50px;">מוצר יחיד</h1>
-          <h1 class="center-align price-cube-text" style="font-size: 30px">12ש״ח/לחודש</h1>
+        <div class="col s8 push-s2 price-cube" style="height: 20em;background-color:#fff">
+          <br><br>
+          <h1 class="center-align price-cube-text"><mark class="pink-marker">12&#8362<span style="font-size: 20px;">לחודש</span></mark></h1>
+          <h1 style="font-size: 25px;margin:0; color: #757575;" class="center-align more-services-p">השירות ניתן עבור פנסיה, ביטוח מנהלים, קרן השתלמות וחסכון פרטי.</h1>
         </div>
-        <div class="col s4 pull-s2 price-cube" style="height: 20em;background-color:#fff; border-right: 1px solid #e0e0e0">
-          <h1 class="center-align price-cube-text" style="font-size: 50px;">שני מוצרים ומעלה</h1>
-          <h1 class="center-align price-cube-text" style="font-size: 30px">22ש״ח/לחודש</h1>
-        </div>
-      </div>
-      <h1 style="font-size: 25px;margin:0; color: #fff;" class="center-align more-services-p">השירות ניתן גם עבור קרן השתלמות, ביטוח מנהלים וחסכונות פרטיים.</h1>
-    </div>
-
-
-    <div id="fifth-div" class="section scrollspy scrollify" dir="rtl">
-      <div style="padding-top: 0em;">
-          <p class="howboostworkstext" style="text-align: center;font-size: 60px;color: #757575;font-weight: 900;font-family: 'Assistant', serif;">איך זה עובד?</p>
-      </div>
-      <div style="display:block; padding-top: 2em; padding-bottom: 10em;" class="center-align">
-          <%= image_tag("http://i.imgur.com/LHYAp7m.png", :class => "undraggableimg howboostworks")%>
       </div>
     </div>
 

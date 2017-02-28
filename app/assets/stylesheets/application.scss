@@ -54,7 +54,8 @@ h1{
   background-color: #bdbdbd;
 }
 .price-cube{
-  border-radius: 15%;
+  border: 2px dashed #757575;
+  border-radius: 33px;
 }
 .price-cube-text{
   color: #757575;
@@ -240,6 +241,11 @@ user-select: none;
     transform: rotate(90deg);
  }
 }
+.pink-marker{
+  background-color: $boost-pink;
+  color: white;
+  border-radius: 20px;
+}
 
   @media only screen and (max-width: 1000px) {
 
@@ -318,13 +324,16 @@ user-select: none;
     #third-div{
       background-size: 800% !important;
     }
+    #third-div-wrapper{
+      margin-top: 7em;
+    }
     .first-mrkt-s-div3{
       margin-top: 0.5em !important;
       font-size: 47px !important;
     }
     .third-mrkt-s-div3{
+      margin-top: 1em;
       font-size: 35px !important;
-      word-break: keep-all;
       text-shadow: 1px 1px #888888;
     }
 
@@ -348,14 +357,14 @@ user-select: none;
     }
     .price-cube{
       margin-top: -20px;
-      border-radius: 0 !important;
     }
     .price-cube-text{
-      font-size: 20px !important;
+      font-size: 40px !important;
     }
     .more-services-p{
       margin-top: -10px !important;
-      font-size: 15px !important;
+      font-size: 20px !important;
+      text-align: justify;
     }
     .coffee-img{
       width: 10% !important;

@@ -37,6 +37,7 @@
     <nav id="navbar" style="box-shadow: 1px 1px 0px 1px #eeeeee;">
       <div class="nav-wrapper" style="margin-left: 5%; margin-right: 5%;">
         <a class="buttonsml buttonc navbtnstrt valign-wrapper" style="float: right;" href="#animatedModal" id="demo01"><span class="valign center-align" style="margin-left: -0.3em;">הצטרף</span></a>
+        <a class="buttonsml buttonc navbtnstrtfaq valign-wrapper" style="float: right;" href="#animatedModal" id="demo03"><span class="valign center-align" style="margin-left: -0.3em;">הצטרף</span></a>
         <%= link_to 'שאלות נפוצות', faq_path, :style => "color:#000;", :class => "faq-btn buttonsml buttonmodal"%>
         <a class="side-nav-btn" style="color: #000; float: left;" href="#" data-activates="slide-out" id="button-collapse"><i class="material-icons">menu</i></a>
           <h1 class="logo brand-logo center" id="title"><%=link_to image_tag("http://i.imgur.com/qv44PsE.png", :class => "logo undraggableimg", :style => "width: 90px;"), root_path%><span style="font-size: 12px; margin-top: -20px;display: block;color: #000; letter-spacing: 2px;margin-left: 4px;">YOUR PENSION</span></h1>
@@ -54,7 +55,7 @@
 
 <script type="text/javascript">
 
-   $('.navbtnstrt').hide();
+  $('.navbtnstrt').hide();
   $(window).scroll(function() {
     if ($(window).scrollTop() > 470) {
         $('.navbtnstrt').removeClass("animated fadeOutUpBig");
@@ -67,6 +68,10 @@
       $('.navbtnstrt').addClass("animated fadeOutUpBig");
     }
 });
+
+if (window.location.pathname == "/") {
+  $(".navbtnstrtfaq").addClass("hide");
+};
 
         // Initialize collapse button
   $("#button-collapse").sideNav({
@@ -93,6 +98,11 @@ $(document).ready(function() {
         color: "#10B5B5",
     });
     $("#demo02").animatedModal({
+        animatedIn:'fadeInDown',
+        animatedOut:'fadeOutUp',
+        color: "#10B5B5",
+    });
+    $("#demo03").animatedModal({
         animatedIn:'fadeInDown',
         animatedOut:'fadeOutUp',
         color: "#10B5B5",
